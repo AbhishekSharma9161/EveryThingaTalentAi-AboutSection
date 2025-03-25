@@ -1,0 +1,24 @@
+.gridComp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 1em;
+    grid-template-areas: "b_0 b_2 b_2 b_1"
+                         "b_4 b_4 b_5 b_5"
+                         "b_3 b_6 b_7 b_7"
+                         "b_9 b_9 b_8 b_8";
+}
+
+.b_0 { grid-area: b_0; }
+.b_1 { grid-area: b_1; }
+.b_2 { grid-area: b_2; }
+.b_3 { grid-area: b_3; }
+.b_4 { grid-area: b_4; }
+.b_5 { grid-area: b_5; }
+.b_6 { grid-area: b_6; }
+.b_7 { grid-area: b_7; }
+.b_8 { grid-area: b_8; }
+.b_9 { grid-area: b_9; }
+
+
+
