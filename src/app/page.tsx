@@ -15,12 +15,7 @@ export default function Home() {
   return (
     <>
       <div
-        style={{
-          backgroundColor: "#121212",
-          color: "#ffffff",
-          minHeight: "100vh",
-          padding: "20px",
-        }}
+        className="min-h-screen p-5 bg-white text-black dark:bg-gray-900 dark:text-white transition-all"
       >
         <Toggle />
         <Container>
