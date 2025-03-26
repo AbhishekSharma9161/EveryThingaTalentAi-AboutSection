@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Left = () => {
     return (
-        <div>
+        <div className="">
             <p className="font-bold mt-2">ABOUT US</p>
             <h1 className="text-5xl font-bold mt-10">Shaping the Next Generation of HR Tech Recruitment.</h1>
             <p className="text-xl text-gray-400 mt-10">At Everything Talent, we help you launch your recruitment into a new dimension.</p>

@@ -36,11 +36,11 @@ const Component = () => {
 
     }]
     return (
-        <div className='flex gap-10 justify-between items-start'>
-            <div>
+        <div className='md:flex gap-10 justify-between items-start'>
+            <div className='w-full'>
                 <h1 className='text-5xl font-bold mb-7'>The Story Behind Us</h1>
                 <p className='text-gray-200 text-xl mb-8'>It all started with one question: What if hiring didn't have to feel like gambling on a hunch?</p>
-                <div className='flex flex-wrap gap-5'>
+                <div className='w-full md:min-w-20 md:max-w-160 md:flex md:flex-wrap md:gap-5'>
                     {arr.map((obj, idx) => (
                         <div key={idx}>
                             <Card obj={obj} />
@@ -48,8 +48,8 @@ const Component = () => {
                     ))}
                 </div>
             </div>
-            <div className='relative'>
-                <div className='w-135 h-120 flex justify-start items-start relative'>
+            <div className='relative w-full'>
+                <div className='w-full m-w-135 h-120 flex hover:scale-x-[105%] duration-250 ease-in-out justify-start items-start relative mt-10 md:mt-0 md:min-w-100 md:max-w-290'>
                     <Image src={'/assests/section3.svg'} fill></Image>
                 </div>
             </div>

@@ -45,17 +45,17 @@ const Component = () => {
         "desc": "We celebrate achievements and grow together as one team."
     }]
     return (
-        <div className='flex gap-10'>
-            <div className="w-400 h-170 hover:scale-x-[1.05] duration-200 ease-in-out relative">
+        <div className='md:flex gap-10 w-full'>
+            <div className="mb-10 w-full max-w-400 h-170 hover:scale-x-[1.05] duration-200 ease-in-out relative md:mb-0 md:min-w-50 md:max-w-200">
                 <Image className='rounded-2xl' src={"/assests/section5.webp"} fill ></Image>
             </div>
-            <div>
+            <div className='w-full'>
                 <h1 className='text-5xl font-bold mb-8'>How We Thrive</h1>
                 <p className='text-lg text-gray-300 font-medium mb-8'>At Everything Talent, we break the norm. Driven by community, we empower individuals to innovate, learn, and push boundaries—fostering shared growth and a relentless pursuit of excellence.</p>
-                <div className='flex flex-wrap gap-5'>
+                <div className='w-full flex flex-wrap gap-5'>
                     {
                         obj.map((obj, idx) => (
-                            <div key={idx}>
+                            <div key={idx} className='w-full'>
                                 <Card obj={obj} />
                             </div>
                         ))

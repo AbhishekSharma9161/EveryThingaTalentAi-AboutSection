@@ -3,7 +3,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import Image from 'next/image' 
+import Image from 'next/image'
 
 
 const Component = () => {
@@ -11,7 +11,7 @@ const Component = () => {
     return (
         <div className='flex pl-22'>
             <div >
-                <div className="w-42 h-42  relative">
+                <div className="w-42 h-42 relative">
                     <Image src={'/assests/lastsection.webp'} fill></Image>
                 </div>
                 <h1 className='text-3xl font-medium'>Everything Talent</h1>
@@ -25,7 +25,7 @@ const Component = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex">
+            <div className="md:flex">
                 {
                     matrix.map((arr) => {
                         return <div className='mx-18'>{

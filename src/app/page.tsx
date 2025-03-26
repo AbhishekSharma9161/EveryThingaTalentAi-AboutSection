@@ -9,6 +9,7 @@ import Component5 from "@/comps/section5/Component";
 import Component7 from "@/comps/section7/Component";
 import Component8 from "@/comps/section8/Component"
 import Foot from "@/comps/footer/Footer"
+import Toggle from '@/comps/textComp/Toggle'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           padding: "20px",
         }}
       >
+        <Toggle />
         <Container>
           <Hero />
         </Container>
@@ -61,19 +63,19 @@ export default function Home() {
           />
         </Container>
         <Container>
-          <Component5/>
+          <Component5 />
         </Container>
         {/* <Container>
           <Component6 />
         </Container> */}
         <Container>
-          <Component7/>
+          <Component7 />
         </Container>
         <Container>
-          <Component8/>
+          <Component8 />
         </Container>
         <Container>
-          <Foot/>
+          <Foot />
         </Container>
       </div>
     </>
