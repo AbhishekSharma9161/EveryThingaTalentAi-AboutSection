@@ -1,0 +1,35 @@
+.parent {
+    background-color: black;
+    overflow: hidden;
+  }
+
+  .circle {
+    position: absolute;
+    border: 1px solid rgb(48, 36, 36);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .bigCircle{
+    width: 400px;
+    height: 400px;
+  }
+
+  /* Static Circle (Doesn't move) */
+  .static {
+    top: 20%;
+    left: 20%;
+  }
+
+  /* Moving Circle */
+  .moving {
+    top: 35%;
+    left: 30%;
+    animation: moveCircle 10s linear infinite;
+  }
+
+  @keyframes moveCircle {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(100px, 50px); }
+  }

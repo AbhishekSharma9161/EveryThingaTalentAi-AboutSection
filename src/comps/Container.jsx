@@ -1,6 +1,6 @@
-const Container = ({children}) => {
+const Container = ({children, mb}) => {
     return (
-      <div className="mt-10 mb-30">
+      <div className={`mt-10 mb-${mb}`}>
         {children}
       </div>
     )

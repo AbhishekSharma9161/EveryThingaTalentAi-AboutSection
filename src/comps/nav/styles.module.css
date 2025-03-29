@@ -1,0 +1,25 @@
+.parent{
+    position: relative;
+}
+
+
+  .child {
+    position: absolute;
+    transform: scale(0); 
+    transition: transform 0.3s ease-out;  
+    top: 35px;
+    left: 0;
+  }
+  
+  .parent:hover .child {
+    transform: scale(1); 
+  }
+
+  .arrow{
+    transition: all 0.1s ease;
+  }
+
+  .parent:hover .arrow{
+    transform: rotateX(180deg);
+  }
+  

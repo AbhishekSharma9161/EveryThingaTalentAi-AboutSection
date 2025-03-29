@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '@/comps/textComp/Card'
 import Image from 'next/image'
+import GradientText from '../textComp/GradientText'
 
 const Component = () => {
     const arr = [{
@@ -38,7 +39,7 @@ const Component = () => {
     return (
         <div className='md:flex gap-10 justify-between items-start'>
             <div className='w-full'>
-                <h1 className='text-5xl font-bold mb-7'>The Story Behind Us</h1>
+                <h1 className='text-5xl font-bold mb-7'>The {<GradientText text={'Story'} />} Behind Us</h1>
                 <p className='text-gray-200 text-xl mb-8'>It all started with one question: What if hiring didn't have to feel like gambling on a hunch?</p>
                 <div className='w-full md:min-w-20 md:max-w-160 md:flex md:flex-wrap md:gap-5'>
                     {arr.map((obj, idx) => (

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Card from "@/comps/textComp/Card"
+import GradientText from '../textComp/GradientText'
 
 const Component = () => {
     const obj = [{
@@ -50,12 +51,12 @@ const Component = () => {
                 <Image className='rounded-2xl' src={"/assests/section5.webp"} fill ></Image>
             </div>
             <div className='w-full'>
-                <h1 className='text-5xl font-bold mb-8'>How We Thrive</h1>
+                <h1 className='text-5xl font-bold mb-8'>{<GradientText text={'How We Thrive'}/>}</h1>
                 <p className='text-lg text-gray-300 font-medium mb-8'>At Everything Talent, we break the norm. Driven by community, we empower individuals to innovate, learn, and push boundaries—fostering shared growth and a relentless pursuit of excellence.</p>
                 <div className='w-full flex flex-wrap gap-5'>
                     {
                         obj.map((obj, idx) => (
-                            <div key={idx} className='w-full'>
+                            <div key={idx} className='w-full md:w-fit'>
                                 <Card obj={obj} />
                             </div>
                         ))

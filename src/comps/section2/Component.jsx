@@ -1,6 +1,9 @@
-import React from 'react';
+'use client'
+
+import React, { useState, useEffect } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TabComp from './TabComp'
+import styles from './styles.module.css';
 
 const Component = () => {
     const obj = {
@@ -34,13 +37,37 @@ const Component = () => {
         },
     };
 
+    const [currTab, setCurrTab] = useState(0);
+    const [currPos, setCurrPos] = useState(0);
+    const clickHandler = (tabNum) => {
+        setCurrTab(tabNum); 
+        const pos = (tabNum * 40 * 4) + (tabNum*15) + 11;
+        setCurrPos(pos); 
+    }
+
+    useEffect(() => {
+        console.log(currPos); 
+    }, [currPos]);
+
     return (
         <div>
             <Tabs defaultValue="Ambition" className="">
                 <div className="max-w-full m-auto">
-                    <TabsList className='flex-nowrap w-120 h-12 bg-black rounded-4xl'>
-                        {Object.keys(obj).map((key) => (
-                            <TabsTrigger className='text-gray-500 text-base font-medium hover:text-white rounded-4xl transition duration-250 ease-in-out' key={key} value={key}>{key}</TabsTrigger>
+                    <TabsList className='flex-nowrap w-120 h-12 border-1 w-fit border-gray-800 rounded-4xl bg-gradient-to-r from-black via-[#0f172a] to-[#020617] hover:scale-[101%] relative'>
+                        {/* "Red Dot" */}
+                        <div
+                            className="absolute"
+                            style={{ width: "160px", height: "40px", backgroundColor: "white", left: `${currPos}px`, transition: '0.8s all ease', zIndex: '0', borderRadius: "30px" }}
+                        ></div>
+                        {Object.keys(obj).map((key, ind) => (
+                            <TabsTrigger
+                                onClick={() => clickHandler(ind)} // Pass tab index
+                                className='text-gray-500 text-base font-medium rounded-4xl transition duration-250 ease-in-out hover:text-white z-1'
+                                key={key}
+                                value={key}
+                            >
+                                {key}
+                            </TabsTrigger>
                         ))}
                     </TabsList>
                 </div>

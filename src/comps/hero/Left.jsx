@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { FaArrowRight } from "react-icons/fa";
+import GradientText from '@/comps/textComp/GradientText'
 
 
 const Left = () => {
     return (
-        <div className="">
+        <div className="z-1">
             <p className="font-bold mt-2">ABOUT US</p>
-            <h1 className="text-5xl font-bold mt-10">Shaping the Next Generation of HR Tech Recruitment.</h1>
+            <h1 className="text-5xl font-bold mt-10">Shaping the Next Generation of HR {<GradientText text={"Tech Recruitment."}/>}</h1>
             <p className="text-xl text-gray-400 mt-10">At Everything Talent, we help you launch your recruitment into a new dimension.</p>
             <Button
                 className="mt-10 p-5 w-60 flex justify-center items-center group relative overflow-hidden border-2 border-transparent text-black"
