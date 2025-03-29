@@ -1,5 +1,6 @@
 import SmallBox from "./SmallBox";
-import Image from "next/Image";
+import Image from 'next/image';
+
 
 const Container = ({ obj, i }) => {
     const { smallHead, year, desc, boxes, img } = obj;
