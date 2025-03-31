@@ -51,9 +51,9 @@ const Component = () => {
 
     return (
         <div>
-            <Tabs defaultValue="Ambition" className="hidden md:block">
-                <div className="max-w-full m-auto">
-                    <TabsList className='bg-[#fdf3fa] flex-nowrap w-120 h-12 border-1 w-fit border-gray-800 rounded-4xl dark:bg-gradient-to-r from-black via-[#0f172a] to-[#020617] hover:scale-[101%] relative'>
+            <Tabs defaultValue="Ambition" className="hidden md:block ">
+                <div className="max-w-full m-auto flex">
+                    <TabsList className=' flex-nowrap w-120  h-12 border-1 w-fit border-gray-800 rounded-4xl dark:bg-gradient-to-r from-black via-[#0f172a] to-[#020617] hover:scale-[101%] relative mx-auto'>
                         {/* "Red Dot" */}
                         <div
                             className="absolute"
@@ -61,7 +61,7 @@ const Component = () => {
                         ></div>
                         {Object.keys(obj).map((key, ind) => (
                             <TabsTrigger
-                                onClick={() => clickHandler(ind)} // Pass tab index
+                                onClick={() => clickHandler(ind)}
                                 className='text-gray-500 text-base font-medium rounded-4xl transition duration-250 ease-in-out dark:hover:text-white z-1'
                                 key={key}
                                 value={key}
@@ -79,7 +79,7 @@ const Component = () => {
                 ))}
             </Tabs>
             {
-                <div className="max-w-full m-auto">
+                <div className="max-w-full m-auto md:hidden">
                     {Object.entries(obj).map(([key, value]) => (
                         <TabComp key={key} obj={value} />
                     ))}
