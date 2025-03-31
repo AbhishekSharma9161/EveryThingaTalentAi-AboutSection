@@ -27,10 +27,10 @@ export default function Home() {
       >
         {/* <Toggle /> */}
         <NavBar/>
-        <Container mb="30">
+        <Container footer={false}>
           <Hero />
         </Container>
-        <Container  mb="30">
+        <Container  footer={false}>
           <div className="mb-20 ">
           <Heading
             boxText={"Our Standards"}
@@ -44,10 +44,10 @@ export default function Home() {
           </div>
           <Component2 />
         </Container>
-        <Container mb="30">
+        <Container footer={false}>
           <Component3 />
         </Container>
-        <Container mb="30">
+        <Container footer={false}>
           <Heading
             boxText={"Our Values"}
             stHead={'Our Philosophy in'}
@@ -58,13 +58,13 @@ export default function Home() {
             }
           />
         </Container>
-        <Container mb="30">
+        <Container footer={false}>
           <Component4 />
         </Container>
-        <Container mb="30">
+        <Container footer={false}>
           <Component5 />
         </Container>
-        <Container mb="30">
+        <Container footer={false}>
           <Heading
             boxText={"Our Values & Milestones"}
             stHead={'Our'}
@@ -75,13 +75,13 @@ export default function Home() {
             }
           />
         </Container>
-        <Container mb="30">
+        <Container footer={false}>
           <Component6 />
         </Container>
-        <Container mb="30">
+        <Container footer={false}>
           <Component7 />
         </Container>
-        <Container mb={"0"}>
+        <Container footer={true}>
           <Component8 />
           <Foot />
         </Container>
