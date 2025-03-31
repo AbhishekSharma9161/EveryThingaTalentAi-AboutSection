@@ -21,4 +21,14 @@
 .b_9 { grid-area: b_9; }
 
 
+@media (max-width: 768px) {
+    .gridComp {
+        display: block;
+    }
+    .box{
+        margin: 10px 0;
+    }
+}
+
+
 

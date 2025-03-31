@@ -40,20 +40,20 @@ const Component = () => {
     const [currTab, setCurrTab] = useState(0);
     const [currPos, setCurrPos] = useState(0);
     const clickHandler = (tabNum) => {
-        setCurrTab(tabNum); 
-        const pos = (tabNum * 40 * 4) + (tabNum*15) + 11;
-        setCurrPos(pos); 
+        setCurrTab(tabNum);
+        const pos = (tabNum * 40 * 4) + (tabNum * 15) + 11;
+        setCurrPos(pos);
     }
 
     useEffect(() => {
-        console.log(currPos); 
+        console.log(currPos);
     }, [currPos]);
 
     return (
         <div>
-            <Tabs defaultValue="Ambition" className="">
+            <Tabs defaultValue="Ambition" className="hidden md:block">
                 <div className="max-w-full m-auto">
-                    <TabsList className='flex-nowrap w-120 h-12 border-1 w-fit border-gray-800 rounded-4xl bg-gradient-to-r from-black via-[#0f172a] to-[#020617] hover:scale-[101%] relative'>
+                    <TabsList className='bg-[#fdf3fa] flex-nowrap w-120 h-12 border-1 w-fit border-gray-800 rounded-4xl dark:bg-gradient-to-r from-black via-[#0f172a] to-[#020617] hover:scale-[101%] relative'>
                         {/* "Red Dot" */}
                         <div
                             className="absolute"
@@ -62,7 +62,7 @@ const Component = () => {
                         {Object.keys(obj).map((key, ind) => (
                             <TabsTrigger
                                 onClick={() => clickHandler(ind)} // Pass tab index
-                                className='text-gray-500 text-base font-medium rounded-4xl transition duration-250 ease-in-out hover:text-white z-1'
+                                className='text-gray-500 text-base font-medium rounded-4xl transition duration-250 ease-in-out dark:hover:text-white z-1'
                                 key={key}
                                 value={key}
                             >
@@ -78,6 +78,13 @@ const Component = () => {
                     </TabsContent>
                 ))}
             </Tabs>
+            {
+                <div className="max-w-full m-auto">
+                    {Object.entries(obj).map(([key, value]) => (
+                        <TabComp key={key} obj={value} />
+                    ))}
+                </div>
+            }
         </div>
     );
 };

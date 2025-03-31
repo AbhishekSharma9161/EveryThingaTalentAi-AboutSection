@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Container = ({ obj, i }) => {
     const { smallHead, year, desc, boxes, img } = obj;
     return (
-        <div className={`flex justify-between items-start sticky top-30 py-8 px-14 rounded-2xl gap-10 bg-gradient-to-br from-purple-50 via-pink-50 to-white dark:from-black dark:via-slate-900 dark:to-slate-950`} >
+        <div className={`flex justify-between items-start sticky top-30 py-8 px-14 rounded-2xl gap-10 bg-gradient-to-b from-[#e2e8f0] to-white dark:from-black dark:via-slate-900 dark:to-slate-950`} >
             <div>
                 <p className={`font-medium text-purple-400`}>{smallHead}</p>
                 <h1 className={`text-3xl font-bold pb-6`}>{year}</h1>
@@ -21,7 +21,7 @@ const Container = ({ obj, i }) => {
                 }
             </div>
             <div className="">
-                <div className="w-10 h-10 md:w-150 md:h-150 relative rounded-xl overflow-hidden">
+                <div className="w-10 h-10 md:w-150 md:h-150 relative rounded-xl overflow-hidden hidden md:block">
                     <Image src={img} fill></Image>
                 </div>
             </div>

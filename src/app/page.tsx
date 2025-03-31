@@ -81,10 +81,8 @@ export default function Home() {
         <Container mb="30">
           <Component7 />
         </Container>
-        <Container mb="30">
+        <Container mb={"0"}>
           <Component8 />
-        </Container>
-        <Container mb={0}>
           <Foot />
         </Container>
       </div>
