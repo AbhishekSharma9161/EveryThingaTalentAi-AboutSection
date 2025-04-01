@@ -2,8 +2,8 @@ import Button from './CustomButton'
 
 const Page = () => {
   return (
-    <div className='m-50'>
-      <Button h={40} w={50} text={"My Button"}/>
+    <div className='m-10 w-full'>
+      <Button h={40} w={10} text={"My Button"} link=''/>
     </div>
   )
 }
