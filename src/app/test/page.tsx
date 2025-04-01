@@ -1,10 +1,9 @@
-import Button from './CustomButton'
+import { Button } from "@/components/ui/button"
+
 
 const Page = () => {
   return (
-    <div className='m-10 w-full'>
-      <Button h={40} w={10} text={"My Button"} link=''/>
-    </div>
+    <Button variant={"logo"}/>
   )
 }
 
