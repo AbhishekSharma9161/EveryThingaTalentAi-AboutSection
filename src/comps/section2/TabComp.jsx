@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const TabComp = ({ key, obj }) => {
+const TabComp = ({ obj }) => {
     return (
         <div className='md:flex mt-10 bg-[#fdf2f8] dark:bg-gray-950 px-18 py-16 rounded-3xl '>
             <div className='md:flex w-full   dark:bg-gradient-to-r from-black via-[#0f172a] to-[#020617]'>

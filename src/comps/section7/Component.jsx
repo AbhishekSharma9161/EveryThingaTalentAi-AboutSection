@@ -13,7 +13,7 @@ const Component = () => {
                 />
             </div>
             <div className='h-screen absolute top-0 right-5 w-full'>
-                <Image src="/assests/svgexport-20.svg" fill></Image>
+                <Image src="/assests/svgexport-20.svg" alt="Background pattern" fill />
             </div>
             <div className='absolute top-[50%] left-[50%] translate-[-50%] max-w-150 h-100 rounded-3xl p-2 bg-gradient-to-r from-pink-200 to-blue-200 border-2 outline-2 outline-gray-300 border-pink-500 opacity-70 dark:outline-0 dark:bg-trans'>
                 <div className=' h-full min-w-10 max-w-full flex justify-center items-center rounded-2xl'>
@@ -25,3 +25,4 @@ const Component = () => {
 }
 
 export default Component
+

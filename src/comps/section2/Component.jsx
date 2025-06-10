@@ -74,7 +74,7 @@ const Component = () => {
                 {/* TabsContent for Each Key */}
                 {Object.entries(obj).map(([key, value]) => (
                     <TabsContent key={key} value={key}>
-                        <TabComp key={key} obj={value} />
+                        <TabComp obj={value} />
                     </TabsContent>
                 ))}
             </Tabs>

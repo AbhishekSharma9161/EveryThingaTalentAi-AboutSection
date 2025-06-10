@@ -22,7 +22,7 @@ const Container = ({ obj, i }) => {
             </div>
             <div className="">
                 <div className="w-10 h-10 md:w-150 md:h-150 relative rounded-xl overflow-hidden hidden md:block">
-                    <Image src={img} fill></Image>
+                    <Image src={img} alt={`${smallHead} illustration`} fill />
                 </div>
             </div>
         </div >

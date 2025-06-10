@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='flex flex-col bg-black'>
             <div className='h-100 relative'>
-                <Image src={'/assests/footer.webp'} fill></Image>
+                <Image src={'/assests/footer.webp'} alt="Footer background pattern" fill />
             </div>
         </div>
     )
