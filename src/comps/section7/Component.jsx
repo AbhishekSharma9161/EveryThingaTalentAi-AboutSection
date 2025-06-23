@@ -1,26 +1,36 @@
 import React from 'react'
 import Image from 'next/image'
 import Component2 from './Component2'
+import styles from './section7.module.css'
 
 const Component = () => {
     return (
-        <div className='h-screen relative shadow-inner'>
-            <div className='relative h-full invert-100 dark:bg-black dark:invert-0'>
+        <section className={styles.section7Root}>
+            <div className={styles.section7Container}>
                 <Image
                     src="/assests/world-map.svg"
                     alt="Background Image"
                     fill
+                    className="object-cover opacity-20"
                 />
             </div>
-            <div className='h-screen absolute top-0 right-5 w-full'>
-                <Image src="/assests/svgexport-20.svg" alt="Background pattern" fill />
+            <div className='absolute inset-0 h-screen w-full'>
+                <Image 
+                    src="/assests/svgexport-20.svg" 
+                    alt="Background pattern" 
+                    fill 
+                    className="object-cover opacity-10"
+                />
             </div>
-            <div className='absolute top-[50%] left-[50%] translate-[-50%] max-w-150 h-100 rounded-3xl p-2 bg-gradient-to-r from-pink-200 to-blue-200 border-2 outline-2 outline-gray-300 border-pink-500 opacity-70 dark:outline-0 dark:bg-trans'>
-                <div className=' h-full min-w-10 max-w-full flex justify-center items-center rounded-2xl'>
-                    <Component2 />
+            <div className={styles.section7Content}>
+                <div className={styles.section7Inner}>
+                    <div className='absolute inset-0 rounded-[calc(var(--radius)-1px)] bg-gradient-to-br from-[hsl(var(--color-2)_/_0.1)] via-[hsl(var(--color-3)_/_0.1)] to-[hsl(var(--color-1)_/_0.1)]'></div>
+                    <div className='relative h-full w-full flex justify-center items-center'>
+                        <Component2 />
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

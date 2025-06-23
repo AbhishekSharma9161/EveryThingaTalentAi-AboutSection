@@ -1,12 +1,12 @@
 .gridComp {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px 250px 250px;
-    gap: 1em;
-    grid-template-areas: "b_0 b_2 b_2 b_1"
-                         "b_4 b_4 b_5 b_5"
-                         "b_3 b_6 b_7 b_7"
-                         "b_9 b_9 b_8 b_8";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    grid-template-areas: 
+        "b_0 b_2 b_2 b_1"
+        "b_4 b_4 b_5 b_5"
+        "b_3 b_6 b_7 b_7"
+        "b_9 b_9 b_8 b_8";
 }
 
 .b_0 { grid-area: b_0; }
@@ -23,12 +23,10 @@
 
 @media (max-width: 768px) {
     .gridComp {
-        display: block;
-    }
-    .box{
-        margin: 10px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
     }
 }
-
 
 
