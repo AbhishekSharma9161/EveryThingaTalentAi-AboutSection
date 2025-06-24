@@ -1,6 +1,6 @@
 import Hero from "@/comps/hero/Hero";
 import Container from "@/comps/Container";
-import Heading from "@/comps/textComp/Heading";
+// import Heading from "@/comps/textComp/Heading";
 import Component3 from "@/comps/section3/Component";
 import Component4 from "@/comps/section4/Component";
 import Component5 from "@/comps/section5/Component";
