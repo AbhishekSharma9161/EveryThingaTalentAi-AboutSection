@@ -1,5 +1,6 @@
 import Box from './Box';
 import styles from './styles.module.css';
+import Image from 'next/image';
 
 const Component = () => {
     const items = [
@@ -18,14 +19,33 @@ const Component = () => {
     return (
         <div className="relative h-full w-full bg-gradient-to-tr from-[#fff9fd] via-[#fff6fc] to-[#ffedfa] dark:bg-gradient-to-bl dark:from-[#0e1628] dark:via-[#0a1121] dark:to-[#0e1628] py-10 sm:py-16 md:py-28 px-4 sm:px-6 lg:px-8 !pt-0">
             <div className="flex justify-end items-center max-w-3xl mx-auto">
-                <img 
+                <Image 
                     alt="decorative line" 
-                    src="/images/curve-line3.png"
-                    className="mb-9 mr-7"
-                    style={{zIndex: 44}}
+                    src="/curve-line3.webp"
                     width={718}
                     height={272}
+                    className="mb-9 mr-7"
+                    style={{color: 'transparent', zIndex: 44}}
+                    loading="lazy"
                 />
+            </div>
+
+            <div className="relative z-30 flex justify-center mb-16 -mt-8">
+                <div className="flex mx-auto items-center border p-[6px] border-white bg-gradient-to-br from-[#1b8afa32] via-[#da16c62f] to-[#fed91e1a] rounded-full w-fit justify-center">
+                    <div className="relative w-14 h-14 rounded-full flex items-center justify-center">
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#1B8BFA] to-[#fed91e9d] via-[#da16c6a3] backdrop-blur-sm"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-slack w-[29px] h-[29px] rotate-180 text-white relative z-10">
+                            <rect width="3" height="8" x="13" y="2" rx="1.5"></rect>
+                            <path d="M19 8.5V10h1.5A1.5 1.5 0 1 0 19 8.5"></path>
+                            <rect width="3" height="8" x="8" y="14" rx="1.5"></rect>
+                            <path d="M5 15.5V14H3.5A1.5 1.5 0 1 0 5 15.5"></path>
+                            <rect width="8" height="3" x="14" y="13" rx="1.5"></rect>
+                            <path d="M15.5 19H14v1.5a1.5 1.5 0 1 0 1.5-1.5"></path>
+                            <rect width="8" height="3" x="2" y="8" rx="1.5"></rect>
+                            <path d="M8.5 5H10V3.5A1.5 1.5 0 1 0 8.5 5"></path>
+                        </svg>
+                    </div>
+                </div>
             </div>
             
             <div className="max-w-7xl mx-auto">
@@ -49,8 +69,8 @@ const Component = () => {
                     {items.map((item, idx) => <Box obj={item} key={idx} idx={idx} />)}
                 </div>
 
-                <div className="absolute !z-40 w-[100%] -bottom-[41px] left-0 h-[100px] bg-gradient-to-br from-[#FDF4FB] via-[#FDF4FB] to-[#FDF4FB] dark:from-black dark:via-slate-900 dark:to-slate-950 blur-[40px]"></div>
-                <div className="absolute !z-40 w-[100%] -top-[41px] left-0 h-[100px] bg-gradient-to-br from-[#FCECF9] via-[#F7E6FA] to-[#EFE2FD] dark:from-black dark:via-slate-900 dark:to-slate-950 blur-[40px]"></div>
+                <div className="absolute z-10 w-[100%] -bottom-[41px] left-0 h-[100px] bg-gradient-to-br from-[#FDF4FB] via-[#FDF4FB] to-[#FDF4FB] dark:from-black dark:via-slate-900 dark:to-slate-950 blur-[40px]"></div>
+                <div className="absolute z-10 w-[100%] -top-[41px] left-0 h-[100px] bg-gradient-to-br from-[#FCECF9] via-[#F7E6FA] to-[#EFE2FD] dark:from-black dark:via-slate-900 dark:to-slate-950 blur-[40px]"></div>
             </div>
         </div>
     );

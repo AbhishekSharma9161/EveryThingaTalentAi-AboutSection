@@ -36,8 +36,8 @@ const Hero = () => {
             </main>
 
             {/* Bottom gradient overlays */}
-            <div style={{zIndex: 40}} className="absolute !z-40 w-[100%] -bottom-[20px] sm:-bottom-[41px] left-0 h-[50px] sm:h-[100px] bg-transparent dark:bg-gradient-to-t from-[#0A1224] dark:to-transparent blur-[40px]"></div>
-            <div style={{zIndex: 40}} className="absolute !z-40 w-[100%] -bottom-[20px] sm:-bottom-[41px] left-0 h-[50px] sm:h-[100px] bg-transparent dark:bg-gradient-to-t from-[#0A1224] dark:to-transparent blur-[40px]"></div>
+            <div style={{zIndex: "40 !important"}} className="absolute !z-40 w-[100%] -bottom-[20px] sm:-bottom-[41px] left-0 h-[50px] sm:h-[100px] bg-transparent dark:bg-gradient-to-t from-[#0A1224] dark:to-transparent blur-[40px]"></div>
+            <div style={{zIndex: "40 !important"}} className="absolute !z-40 w-[100%] -bottom-[20px] sm:-bottom-[41px] left-0 h-[50px] sm:h-[100px] bg-transparent dark:bg-gradient-to-t from-[#0A1224] dark:to-transparent blur-[40px]"></div>
         </div>
     )
 }
