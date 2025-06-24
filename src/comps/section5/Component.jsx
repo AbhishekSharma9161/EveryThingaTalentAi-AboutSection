@@ -66,7 +66,13 @@ const Component = () => {
                 <div className="flex flex-row lg:gap-20 justify-center lg:flex-row-reverse">
                     <div className="lg:w-1/2 relative">
                         <h2 className="mb-6 text-4xl font-bold tracking-tight dark:text-white sm:text-5xl">
-                            <span className="gradient-text-new">How We Thrive</span>
+                            <span style={{
+                                backgroundImage: 'linear-gradient(to right, rgb(236, 11, 200), rgb(91, 178, 246), rgb(246, 196, 54))',
+                                WebkitBackgroundClip: 'text',
+                                backgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                                color: 'transparent'
+                            }}>How We Thrive</span>
                         </h2>
                         <p className="mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
                             At Everything Talent, we break the norm. Driven by community, we empower individuals to innovate, learn, and push boundaries—fostering shared growth and a relentless pursuit of excellence.

@@ -51,7 +51,14 @@ const Standards = () => {
                             </div>
                         </div>
                         <h2 className="mt-5 mb-5 text-5xl leading-[44px] md:text-center font-bold text-gray-900 dark:text-white">
-                            The Fuel for <span className="gradient-text-new text-transparent bg-clip-text">Our Vision</span>
+                            The Fuel for <span className="gradient-text-new text-transparent bg-clip-text">Our </span>
+                            <span style={{
+                                backgroundImage: 'linear-gradient(to right, rgb(236, 11, 200), rgb(91, 178, 246), rgb(246, 196, 54))',
+                                WebkitBackgroundClip: 'text',
+                                backgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                                color: 'transparent'
+                            }}>Vision</span>
                         </h2>
                         <p className="text-gray-600 sm:text-xl sm:leading-[30px] dark:text-slate-400 text-center">
                             Driven by vision, we provide comprehensive solutions to meet all your hiring needs.

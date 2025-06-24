@@ -41,7 +41,8 @@ export default function Home() {
         <Container footer={false}>
           <Component5 />
         </Container>
-        <div className="mt-10 mb-30">
+        {/* Section 6 */}
+        <div>
           <Component6 />
         </div>
         <Container footer={false}>

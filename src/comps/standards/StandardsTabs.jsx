@@ -51,7 +51,7 @@ const StandardsTabs = () => {
 
     return (
         <>
-            <div className="inline-flex bg-gradient-to-br border from-[#f5f6f7] via-[#f5f3fc] to-white dark:from-black dark:via-slate-900 dark:to-slate-950 hover:scale-[101%] shadow-md rounded-full p-1 relative max-sm:hidden">
+            <div className="inline-flex bg-gradient-to-br border from-[#f5f6f7] via-[#f5f3fc] to-white dark:from-black dark:via-slate-900 dark:to-slate-950 hover:scale-[101%] shadow-md rounded-full p-1 relative max-sm:hidden mb-8">
                 {Object.keys(standards).map((tab) => (
                     <button
                         key={tab}
@@ -70,7 +70,7 @@ const StandardsTabs = () => {
                 ))}
             </div>
 
-            <div style={{ opacity: 1, transform: 'none' }}>
+            <div style={{ opacity: 1, transform: 'none' }} className="mb-8">
                 <div className="max-sm:hidden">
                     <div style={{ zIndex: 45 }} className="bg-gradient-to-br relative border from-[#f5f6f7] via-[#f5f3fc] to-white dark:from-black dark:via-slate-900 dark:to-slate-950 rounded-3xl p-8 md:p-16 transition-transform duration-200">
                         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -101,7 +101,7 @@ const StandardsTabs = () => {
                 </div>
             </div>
 
-            <div className="grid gap-8 w-[calc(100%-1rem)] mx-auto sm:hidden">
+            <div className="grid gap-8 w-[calc(100%-1rem)] mx-auto sm:hidden mt-8">
                 {Object.entries(standards).map(([tab, content]) => (
                     <div
                         key={tab}

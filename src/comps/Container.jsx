@@ -21,8 +21,8 @@ const Container = ({children, footer}) => {
   
   // Remove margins for Hero and Standards sections
   const marginClasses = hasHero ? '' 
-    : hasStandards ? 'mt-0' 
-    : `mt-10 ${footer ? 'mb-0' : 'mb-30'}`;
+    : hasStandards ? '!mt-0 !mb-0' 
+    : `!mt-0 !mb-0`;
   
   return (
     <div className={marginClasses}>

@@ -58,7 +58,13 @@ const Component = () => {
                         </div>
                     </div>
                     <h2 className="mt-5 mb-5 text-5xl leading-[44px] md:text-center font-bold text-gray-900 dark:text-white">
-                        Our Philosophy in <span className="gradient-text-new text-transparent bg-clip-text">Action</span>
+                        Our Philosophy in <span style={{
+                            backgroundImage: 'linear-gradient(to right, rgb(236, 11, 200), rgb(91, 178, 246), rgb(246, 196, 54))',
+                            WebkitBackgroundClip: 'text',
+                            backgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            color: 'transparent'
+                        }}>Action</span>
                     </h2>
                     <p className="text-gray-600 sm:text-xl sm:leading-[30px] dark:text-slate-400 text-center">
                         At Everything Talent, Bringing Our Values to Life Through Meaningful Actions

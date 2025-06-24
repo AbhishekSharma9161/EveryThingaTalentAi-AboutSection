@@ -58,7 +58,7 @@ const Component = () => {
     ];
 
     return (
-        <section className="relative z-20 overflow-hidden mx-auto pb-20 dark:from-black dark:via-slate-900 dark:to-slate-950 from-[#fffefe] via-[#ffecf9] to-[#eee1fc] bg-gradient-to-tr">
+        <section className="relative z-20 overflow-visible mx-auto pb-40 dark:from-black dark:via-slate-900 dark:to-slate-950 from-[#fffefe] via-[#ffecf9] to-[#eee1fc] bg-gradient-to-tr">
             <div className="z-20 absolute h-60 bg-gradient-to-b w-full dark:from-[#020718d5] dark:via-[#080f21b7] dark:to-[#0207182e] from-[#f7e7fbd9]"></div>
             <div className="absolute inset-0 h-full w-full bg-transparent bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] dark:bg-[#000000] dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:[background-size:20px_20px] z-10"></div>
             <div style={{zIndex: 45}} className="h-40 pt-1 w-[1.5px] relative mx-auto bg-gradient-to-t from-blue-500 via-purple-600 to-yellow-300/40"></div>

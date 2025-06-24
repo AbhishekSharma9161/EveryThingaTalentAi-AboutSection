@@ -10,7 +10,14 @@ const Left = () => {
                 </p>
                 <p className="text-5xl max-sm:text-4xl font-bold leading-[60px] max-sm:leading-[50px] max-w-[600px]">
                     Shaping the Next Generation of HR{" "}
-                    <span className="gradient-text-new text-transparent bg-clip-text">Tech Recruitment.</span>
+                    <span className="gradient-text-new text-transparent bg-clip-text">Tech </span>
+                    <span style={{
+                        backgroundImage: 'linear-gradient(to right, rgb(236, 11, 200), rgb(91, 178, 246), rgb(246, 196, 54))',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent'
+                    }}>Recruitment.</span>
                 </p>
                 <p className="text-lg text-black/60 dark:text-white/70 leading-relaxed max-w-lg font-light">
                     At Everything Talent, we help you launch your recruitment into a new dimension.

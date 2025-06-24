@@ -48,9 +48,9 @@ const NavBar = () => {
   const [showNavMenu, setShowNavMenu] = useState(false)
 
   return (
-    <div className="flex items-center justify-between w-full h-[54px] max-w-[1400px] mx-auto px-2 md:px-8 transition-all duration-100 z-50">
+    <nav className="bg-white dark:bg-[#121212] transition-colors duration-300 flex items-center justify-between w-full h-[54px] max-w-[1400px] mx-auto px-2 md:px-8 z-50">
       {/* Left section with logo and navigation */}
-      <div className="flex items-center gap-8 rounded-[8px] border-2 border-slate-700/30 dark:border-slate-300/30 shadow-lg hover:shadow-xl bg-slate-200/20 dark:bg-black/20 backdrop-blur-[7px] py-[1px] px-4">
+      <div className="flex items-center gap-8 rounded-[8px] border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-[#121212] py-[1px] px-4">
         {/* Mobile Logo */}
         <div className="block lg:hidden">
           <a className="font-bold text-xl" href="/">
@@ -64,7 +64,7 @@ const NavBar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden lg:flex gap-8 items-center rounded-[8px] dark:bg-black/40 bg-slate-200/40 backdrop-blur-[10px] hover:backdrop-blur-none py-[1px] px-4 hover:bg-slate-200 dark:hover:bg-black transition-all duration-100">
+        <ul className="hidden lg:flex gap-8 items-center rounded-[8px] bg-white dark:bg-[#121212] py-[1px] px-4 transition-all duration-100">
           <a className="font-bold text-xl pl-3" href="/">
             <div className="relative flex space-x-2 h-10 md:w-fit items-center justify-center text-black dark:text-white dark:-ml-4 -ml-2">
               <Image src='/assests/lastsection.webp' alt="Everything Talent Logo" width={40} height={40} className="dark:hidden block h-8 w-8" />
@@ -134,7 +134,7 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Theme Toggle */}
-        <div className="md:hidden px-4 pb-[4px] bg-white/5 dark:bg-black/20 backdrop-blur-xl rounded-[8px] border-2 shadow-lg hover:shadow-xl border-slate-700/30 dark:border-slate-300/30">
+        <div className="md:hidden px-4 pb-[4px] bg-white dark:bg-[#121212] rounded-[8px] border-2 border-slate-200 dark:border-slate-700">
           <ModeToggle />
         </div>
 
@@ -182,7 +182,7 @@ const NavBar = () => {
           </div>
         </div>
       )}
-    </div>
+    </nav>
   )
 }
 
