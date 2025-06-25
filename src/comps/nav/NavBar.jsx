@@ -101,34 +101,30 @@ const NavBar = () => {
 
       {/* Right section */}
       <div className="flex gap-5 py-1">
-        <div className="hidden md:flex animate-fade-in-right items-center rounded-[8px]">
-          <div className="flex items-center space-x-4 rounded-[10px] px-[2px] pl-[2px] -py-[2px] bg-white/5 dark:bg-transparent">
-            <div className="hidden md:flex animate-fade-in-right items-center rounded-[8px] border-2 shadow-lg backdrop-blur-[7px] hover:shadow-xl dark:border-slate-300/30 hover:dark:bg-black" style={{ background: 'rgba(0, 0, 0, 0.6)', backdropFilter: 'blur(40px)' }}>
-              <div className="hidden md:block">
-                <div className="flex items-center justify-center">
-                  <button className="whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group animate-rainbow cursor-pointer bg-[length:200%] font-medium transition-all duration-500 ease-in-out hover:border-none before:absolute before:bottom-[-20%] before:left-1/2 before:z-0 before:h-1/5 before:w-3/5 before:-translate-x-1/2 before:animate-rainbow before:bg-[linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))] before:bg-[length:200%] before:[filter:blur(calc(0.8*1rem))] before:opacity-75 before:transition-opacity before:duration-1000 hover:before:opacity-100 hover:scale-[1.02] after:absolute after:inset-0 after:rounded-md after:p-[2px] after:bg-[linear-gradient(121.31deg,#8B5CF6_-12.16%,#EC4899_48.37%,#F59E0B_112.89%)] after:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] after:[-webkit-mask-composite:destination-out] after:[mask-composite:exclude] after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100 dark:hover:ring-0 [&>span]:relative [&>span]:z-10 px-4 h-full w-full rounded-md gradient-border-logo-color-btn text-center relative overflow-hidden flex items-center justify-center group/modal-btn dark:bg-black bg-white text-black dark:text-white border border-gray-100 dark:border-none py-[8px]">
-                    <span className="flex ml-2 items-center text-center transition duration-500 group-hover/modal-btn:translate-x-0">
-                      <p>Request a Demo</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right translate-x-1 transition">
-                        <path d="m9 18 6-6-6-6"></path>
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <div className="w-full pr-4 pl-4">
-                <ModeToggle />
-              </div>
-            </div>
-            <div className="ml-4 hidden lg:block shadow-lg border-1 rounded-lg">
-              <div className="p-[2px] dark:p-[0px] border-[1px] dark:border-[2px] shadow-lg shadow-white/10 border-white/5 bg-white/5 dark:bg-black/20 backdrop-blur-[7px] rounded-lg dark:border-slate-300/30" style={{ background: 'rgba(100, 116, 139, 0.1)', backdropFilter: 'blur(40px)' }}>
-                <button className="whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group relative inline-flex animate-rainbow cursor-pointer items-center justify-center rounded-md bg-[length:200%] font-medium dark:text-black transition-all duration-500 ease-in-out border-white hover:border-none before:absolute before:bottom-[-20%] before:left-1/2 before:z-0 before:h-1/5 before:w-3/5 before:-translate-x-1/2 before:animate-rainbow before:bg-[linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))] before:bg-[length:200%] before:[filter:blur(calc(0.8*1rem))] before:opacity-75 before:transition-opacity before:duration-1000 hover:before:opacity-100 hover:scale-[1.02] after:absolute after:inset-0 after:rounded-md after:p-[2px] after:bg-[linear-gradient(121.31deg,#8B5CF6_-12.16%,#EC4899_48.37%,#F59E0B_112.89%)] after:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] after:[-webkit-mask-composite:destination-out] after:[mask-composite:exclude] after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100 dark:bg-white dark:hover:ring-0 [&>span]:relative [&>span]:z-10 h-10 px-4 py-2 group w-full bg-white text-black border-none">
-                  Login
-                  <svg className="ml-2 -mr-1 w-5 h-5 group-hover:translate-x-1 transition" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+        <div className="hidden md:flex animate-fade-in-right items-center rounded-[8px] border border-gray-200 shadow-md bg-white dark:bg-transparent dark:border-0 dark:shadow-none">
+          <div className="flex items-center space-x-4">
+            {/* Request a Demo Button */}
+            <div className="hidden md:flex animate-fade-in-right items-center rounded-[8px] border border-gray-200 shadow-md bg-white dark:bg-transparent dark:border-none dark:shadow-none">
+              <button className="whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group animate-rainbow cursor-pointer bg-[length:200%] font-medium transition-all duration-500 ease-in-out hover:border-none before:absolute before:bottom-[-20%] before:left-1/2 before:z-0 before:h-1/5 before:w-3/5 before:-translate-x-1/2 before:animate-rainbow before:bg-[linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))] before:bg-[length:200%] before:[filter:blur(calc(0.8*1rem))] before:opacity-75 before:transition-opacity before:duration-1000 hover:before:opacity-100 hover:scale-[1.02] after:absolute after:inset-0 after:rounded-md after:p-[2px] after:bg-[linear-gradient(121.31deg,#8B5CF6_-12.16%,#EC4899_48.37%,#F59E0B_112.89%)] after:[-webkit-mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] after:[-webkit-mask-composite:destination-out] after:[mask-composite:exclude] after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100 dark:hover:ring-0 [&>span]:relative [&>span]:z-10 px-4 h-full w-full rounded-md gradient-border-logo-color-btn text-center relative overflow-hidden flex items-center justify-center group/modal-btn dark:bg-black bg-white text-black dark:text-white border border-gray-100 dark:border-none py-[8px]">
+                <span className="flex ml-2 items-center text-center transition duration-500 group-hover/modal-btn:translate-x-0">
+                  <p>Request a Demo</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right translate-x-1 transition">
+                    <path d="m9 18 6-6-6-6"></path>
                   </svg>
-                </button>
-              </div>
+                </span>
+              </button>
+            </div>
+            {/* Theme Toggle Button */}
+            <div className="rounded-[8px] border border-gray-200 shadow-md bg-white dark:bg-transparent dark:border-0 dark:shadow-none flex items-center justify-center">
+              <ModeToggle />
+            </div>
+            <div className="hidden lg:block rounded-lg border border-gray-200 shadow-md bg-white dark:bg-transparent dark:border-0 dark:shadow-none">
+              <button className="whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group relative inline-flex items-center justify-center rounded-md font-medium transition-all duration-500 ease-in-out h-10 px-4 py-2 w-full bg-white text-black border-none dark:bg-transparent dark:text-white">
+                Login
+                <svg className="ml-2 -mr-1 w-5 h-5 group-hover:translate-x-1 transition" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>

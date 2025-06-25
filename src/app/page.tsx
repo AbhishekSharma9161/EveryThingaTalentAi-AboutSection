@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={`min-h-screen px-5 pb-5 bg-white text-black dark:bg-gray-900 dark:text-white transition-all bg-gradient-to-br from-purple-50 via-pink-50 to-white dark:from-black dark:via-slate-900 dark:to-slate-950 ${geistFont.className}`}
+        className={`min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white transition-all bg-gradient-to-br from-purple-50 via-pink-50 to-white dark:from-black dark:via-slate-900 dark:to-slate-950 ${geistFont.className}`}
       >
         {/* <Toggle /> */}
         <NavBar/>
